@@ -1,0 +1,342 @@
+/*----CSS Reset---*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    position: relative;
+    margin: auto;
+}
+/* ----CSS for make our content center --- */
+
+.container {
+    width: 350px;
+    margin: auto;
+    padding-top: 20px;
+
+}
+/*---- Styling for heading section----*/
+.heading {
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.heading::before,
+.heading::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.heading h2 {
+    margin: 0 10px;
+    color: #FF6B82;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 600;
+
+}
+/*----CSS Added for main part ---*/
+
+main {
+    position: relative;
+    max-width: 450px;
+    height: 100vh;
+    margin: auto;
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+/* css for main hero section */
+
+.cart-items {
+    position: relative;
+    max-width: 350px;
+    min-height: 75px;
+    margin: 20px 0px;
+    border: 1px solid #9f9f9f;
+}
+
+#price1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 6rem;
+}
+
+.unit {
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+
+.unit p {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    display: inline;
+
+}
+
+.unit span {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-left: 5px;
+
+}
+
+.left-part {
+    display: flex;
+    column-gap: 8px;
+
+}
+
+.right-part p {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14.46px;
+    line-height: 100%;
+}
+
+.item-price span {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: line-through;
+    color: #9f9f9f;
+
+}
+
+input {
+    position: absolute;
+    left: 22px;
+    top: 30px;
+}
+
+input[type="radio"] {
+    border: 2px solid white;
+    box-shadow: 0 0 0 1px #FF6B82;
+    appearance: none;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    transition: all ease-in 0.2s;
+    cursor: pointer;
+}
+
+/* appearance for checked radiobutton */
+
+input[type="radio"]:checked {
+    background-color: #FF6B82;
+}
+
+.btn {
+    height: 40px;
+    width: 350px;
+    background-color: #FF6B82;
+    color: #ffff;
+    padding: 10px 10px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.btn img {
+    padding-right: 5px;
+}
+
+.cart-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    
+}
+
+label {
+    cursor: pointer;
+    position: absolute;
+}
+#pair1 {
+    position: relative;
+    left: 5px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 40px;
+    visibility: hidden;
+
+}
+
+#pair2 {
+    position: relative;
+    left: 5px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 40px;
+    visibility: hidden;
+}
+
+#pair3 {
+    position: relative;
+    left: 5px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 40px;
+    display:none;
+/*     visibility: hidden;
+ */
+    
+}
+select {
+    width: 72px;
+    height: 25px;
+    margin: 5px 05px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 2px
+}
+
+.BtnText {
+    margin-left: 1.1rem;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.BtnColor {
+    margin-left: .2rem;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.Size option {
+    font-size: 10px;
+}
+
+.number {
+    font-size: 12px;
+}
+
+.price {
+    position: relative;
+    left: 35px;
+    margin-top: 10px;
+}
+
+.price p {
+    margin: 5px;
+}
+#popular {
+     font-size: 12px;
+    width: 110px;
+    padding: 2px 5px;
+    float: right;
+}
+.popular{
+    display: flex;
+    width: 120px;
+    position: absolute;
+    right: -228.5px;
+    top: -10px;
+    margin: 0px;
+
+}
+.popular::after{
+    content: "";
+    position: absolute;
+    top: 2.2px;
+    left:-8.5px;
+    transform: rotate(-54deg);
+    border-bottom: 8px solid rgba(0, 0, 0, 0.0);
+    border-left: 4px solid rgba(0, 0, 0, 0.0);
+    border-top:6px solid #D7445B;
+    border-right: 8px solid rgba(0, 0, 0, 0.0);
+    border-radius: 0px 5px 0px 0px;
+   }
+   .popular::before{
+    content: "";
+    position: absolute;
+    top:2px;
+    right:3.5px;
+    transform: rotate(47deg);
+     border-bottom: 8px solid rgba(0, 0, 0, 0.0);
+    border-left: 4px solid rgba(0, 0, 0, 0.0);
+    border-top:8px solid #D7445B;
+    border-right: 8px solid rgba(0, 0, 0, 0.0);
+    border-radius: 5px 2px 0px 0px;
+   }
+#popular-img{
+    border-radius: 2px;
+    position: absolute;
+}
+.extra-content {
+    padding-bottom: 20px;
+}
+.total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Delivery {
+    color: #FF6B82;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-family: Inter;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: #00000066;
+}
+
+#added-data {
+    position: relative;
+    top: 5;
+}
+
+.added-text {
+    position: absolute;
+    font-size: 12px;
+    left:-7px;
+    top:1px;
+    color: #fcf8f8;
+    width: 50px;
+    margin: 4px 4px;
+    padding: 1px 1px
+}
+
+.checked-img {
+    position: absolute;
+    top:2px;
+    left:-5px ;
+}

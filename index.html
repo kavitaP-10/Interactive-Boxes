@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Interactive Boxes </title>
+    <!--External font link Added-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Gotu&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--External CSS link Added-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--External  Javascript link Added-->
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!--Section of page Starts from here-->
+
+    <main>
+        <div class="container">
+            <div class="heading">
+                <h2>YAY! It’s BOGO</h2>
+            </div>
+            <div class="hero">
+                <!--First section starts from here-->
+                <section>
+                    <div class="cart-items">
+                        <input class="form-input" type="radio" name="1" id="inlineRadio1" value="option-1">
+                        <label class="form-check-label" for="inlineRadio1">
+                            <div class="cart-list">
+                                <div id="price1" class="price">
+                                    <div class="unit">
+                                        <div class="left-part">
+                                            <p>1 Unit </p>
+                                            <div id="added-data">
+                                                <img class="checked-img" id="checked-img2" src="img2.png" alt=""
+                                                    width="55px" height="18px">
+                                                <span class="added-text">10% Off</span>
+                                            </div><br>
+                                        </div>
+                                        <span>Standard Price</span>
+
+                                    </div>
+                                    <div class="right-part">
+                                        <p class="item-price">$10.00 USD <br> <span>$24.00 USD</span></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="extra-content" id="extra-content-1">
+                                <div class="select-box" id="pair1">
+                                    <div class="size">
+                                        <span class="BtnText">Size</span><br>
+                                        <span class="number" for="size">#1</span>
+                                        <select name="Mysize" class="Size">
+                                            <option value="XS">XS</option>
+                                            <option value="S" selected>S</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                        </select><br>
+                                        <span class="number" for="size">#2</span>
+                                        <select name="Mysize" class="Size">
+                                            <option value="XS">XS</option>
+                                            <option value="S" selected>S</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                        </select>
+                                    </div>
+                                    <div class="color">
+                                        <span class="BtnColor">Colour</span><br>
+                                        <select name="mycolor" class="color">
+                                            <option value="Red">Red</option>
+                                            <option value="Blue">Blue</option>
+                                            <option value="Green">Green</option>
+                                            <option value="Yellow">Yellow</option>
+                                            <option value="Black" selected>Black</option>
+                                        </select><br>
+                                        <select name="mycolor" class="color">
+                                            <option value="Red">Red</option>
+                                            <option value="Blue">Blue</option>
+                                            <option value="Green">Green</option>
+                                            <option value="Yellow">Yellow</option>
+                                            <option value="Black" selected>Black</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </section>
+                <!--second section starts from here-->
+
+                <section>
+                    <div class="cart-items">
+                        <input class="form-input" type="radio" name="1" id="inlineRadio2" value="option-2">
+                        <label class="form-check-label" for="inlineRadio2">
+                            <div id="added-data" class="popular">
+                                <img class="checked-img" id="popular-img" src="img1.png" alt="" width="119px" height="25px">
+                                <span class="added-text" id="popular"><strong>MOST POPULAR</strong></span>
+                           </div>
+                           <br>
+                            <div class="cart-list">
+                                <div id="price1" class="price" style="margin-top: 0px;">
+                                    <div class="unit">
+                                        <div class="left-part">
+                                            <p>2 Unit </p>
+                                            <div id="added-data">
+                                                <img class="checked-img" id="checked-img2" src="img2.png" alt=""
+                                                    width="55px" height="18px">
+                                                <span class="added-text">20% Off</span>
+                                            </div><br>
+                                            <br>
+                                        </div>
+                                    </div>                                 
+                                        <div class="right-part">
+                                          <p style="margin-left:2rem;" class="item-price">$18.00 USD <br> <span>$24.00 USD</span></p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="extra-content" id="extra-content-2">
+                                <div class="select-box" id="pair2">
+                                    <div class="size">
+                                        <span class="BtnText">Size</span><br>
+                                        <span class="number" for="size">#1</span>
+                                        <select name="Mysize" class="Size">
+                                            <option value="XS">XS</option>
+                                            <option value="S" selected>S</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                        </select><br>
+                                        <span class="number" for="size">#2</span>
+                                        <select name="Mysize" class="Size">
+                                            <option value="XS">XS</option>
+                                            <option value="S" selected>S</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                        </select>
+                                    </div>
+                                    <div class="color">
+                                        <span class="BtnColor">Colour</span><br>
+                                        <select name="mycolor" class="color">
+                                            <option value="Red">Red</option>
+                                            <option value="Blue">Blue</option>
+                                            <option value="Green">Green</option>
+                                            <option value="Yellow">Yellow</option>
+                                            <option value="Black" selected>Black</option>
+                                        </select><br>
+                                        <select name="mycolor" class="color">
+                                            <option value="Red">Red</option>
+                                            <option value="Blue">Blue</option>
+                                            <option value="Green">Green</option>
+                                            <option value="Yellow">Yellow</option>
+                                            <option value="Black" selected>Black</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </section>
+                <!--third section starts from here-->
+                <section>
+                    <div class="cart-items">
+                        <input class="form-input" type="radio" name="1" id="inlineRadio3" value="option-3">
+                        <label class="form-check-label" for="inlineRadio3">
+                            <div class="cart-list">
+                                <div id="price1" class="price">
+                                    <div class="unit">
+                                        <div class="left-part">
+                                            <p>3 Unit </p>
+                                            <div id="added-data">
+                                                <img class="checked-img" id="checked-img2" src="img2.png" alt=""
+                                                    width="55px" height="18px">
+                                                <span class="added-text">30% Off</span>
+                                            </div><br>
+                                        </div>
+
+                                    </div>
+                                    <div class="right-part">
+                                        <p style="margin-left:2rem;" class="item-price">$24.00 USD <br> <span>$24.00 USD</span></p>
+                                    </div>
+                                </div>
+
+                            </div><br>
+                            <div class="extra-content" id="extra-content">
+                                <div class="select-box" id="pair3">
+                                    <div class="size">
+                                        <span class="BtnText">Size</span><br>
+                                        <span class="number" for="size">#1</span>
+                                        <select name="Mysize" class="Size">
+                                            <option value="XS">XS</option>
+                                            <option value="S" selected>S</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                        </select><br>
+                                        <span class="number" for="size">#2</span>
+                                        <select name="Mysize" class="Size">
+                                            <option value="XS">XS</option>
+                                            <option value="S" selected>S</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                        </select>
+                                    </div>
+                                    <div class="color">
+                                        <span class="BtnColor">Colour</span><br>
+                                        <select name="mycolor" class="color">
+                                            <option value="Red">Red</option>
+                                            <option value="Blue">Blue</option>
+                                            <option value="Green">Green</option>
+                                            <option value="Yellow">Yellow</option>
+                                            <option value="Black" selected>Black</option>
+                                        </select><br>
+                                        <select name="mycolor" class="color">
+                                            <option value="Red">Red</option>
+                                            <option value="Blue">Blue</option>
+                                            <option value="Green">Green</option>
+                                            <option value="Yellow">Yellow</option>
+                                            <option value="Black" selected>Black</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="total">
+                <p class="Delivery">Free Delivery</p>
+                <p >Total : <sapn id="cart-total">$00.00 USD</sapn>
+                </p>
+            </div>
+            <!--Cart Button Addede-->
+            <button id="Cart-Btn" class="btn"> <img src="Icon.png" alt="" height="10px" width="15px"> Add
+                to cart </button>
+            <!--Footer Part Added here-->
+            <div class="footer"><p>@ Powered by Pumper</p></div>
+        </div>
+        <!--main Body Ended here-->
+
+    </main>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+content: "";
+background-color:#080708;
+position: absolute;
+top: 1px;
+left:0px;
+transform: rotate(-70deg);
+/* border-right: 2px solid #FF6B82; */
+border-bottom: 10px solid #D7445B;
+border-left: 8px solid #D7445B; -->
